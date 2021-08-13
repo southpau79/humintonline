@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="pdays <= 9.5\ngini = 0.207\nsamples = 36168\nvalue = [4231, 31937]\nclass = Yes"] ;
+1 [label="age <= 60.5\ngini = 0.167\nsamples = 29682\nvalue = [2731, 26951]\nclass = Yes"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="month_mar <= 0.5\ngini = 0.158\nsamples = 29100\nvalue = [2511, 26589]\nclass = Yes"] ;
+1 -> 2 ;
+3 [label="gini = 0.152\nsamples = 28877\nvalue = [2396, 26481]\nclass = Yes"] ;
+2 -> 3 ;
+4 [label="gini = 0.5\nsamples = 223\nvalue = [115, 108]\nclass = No"] ;
+2 -> 4 ;
+5 [label="contact <= 0.0\ngini = 0.47\nsamples = 582\nvalue = [220, 362]\nclass = Yes"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 15\nvalue = [0, 15]\nclass = Yes"] ;
+5 -> 6 ;
+7 [label="gini = 0.475\nsamples = 567\nvalue = [220, 347]\nclass = Yes"] ;
+5 -> 7 ;
+8 [label="poutcome <= 1.5\ngini = 0.356\nsamples = 6486\nvalue = [1500, 4986]\nclass = Yes"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="housing <= 1.5\ngini = 0.457\nsamples = 1186\nvalue = [766, 420]\nclass = No"] ;
+8 -> 9 ;
+10 [label="gini = 0.494\nsamples = 368\nvalue = [204, 164]\nclass = No"] ;
+9 -> 10 ;
+11 [label="gini = 0.43\nsamples = 818\nvalue = [562, 256]\nclass = No"] ;
+9 -> 11 ;
+12 [label="housing <= 1.5\ngini = 0.239\nsamples = 5300\nvalue = [734, 4566]\nclass = Yes"] ;
+8 -> 12 ;
+13 [label="gini = 0.157\nsamples = 3703\nvalue = [319, 3384]\nclass = Yes"] ;
+12 -> 13 ;
+14 [label="gini = 0.385\nsamples = 1597\nvalue = [415, 1182]\nclass = Yes"] ;
+12 -> 14 ;
+}
