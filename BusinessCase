@@ -1,0 +1,100 @@
+I'm presenting here an academic project on blockchain technology. In the DLT (Distributed Ledger Technology) arena, there are several players and platforms but the most popular ones right now are Ethereum (maybe because of THE MERGE or ETH 2.0) and Bitcoin (being the grandpa of blockchain based cryptocurrency and papa of several sidechains and Multichain). 
+
+Here, you can learn about deploying a Smart Contract written in Solidity for a specific use case over RSK Testnet - a BTC sidechain that supports EVM.
+
+The tools required are:
+
+Remix IDE
+Solidity Programming Language
+Metamask Wallet
+Injected Web3 Provider (Ganache with Ropsten Testnet, RSK Testnet, etc.)
+Compatible browser (Chrome, Brave, etc.)
+Agenda
+
+It is becoming difficult to track down illegal colleges. Many students' careers are spoiled as they enroll in them. A solution is needed that can ensure transparency and integrity of the admission process. 
+
+
+Background
+
+In many parts of India, illegal colleges are run, which are not affiliated to any university. Many students enroll in these colleges without knowing that and in turn they end up having no jobs or colleges get shut down after some time, which ruins their career.
+
+
+Business Logic
+
+If the database of colleges is created over a decentralized blockchain then it would ensure that only authorized / verified colleges are able to admit students. This can be achieved by deploying a smart contract over a public blockchain. 
+
+Smart Contract Main Functions
+
+Function Name
+
+Description
+
+Input
+
+Response
+
+addNewCollege ()
+
+Only university admin can add new college
+
+cName, cAddress, cAdmin, cRegNo
+
+Integer success response
+
+viewCollegeDetails ()
+
+Anyone can view college details
+
+cAddress
+
+Displays cName, cRegNo
+
+blockCollegeToAddNewStudents ()
+
+Only university admin can block colleges from adding new students
+
+cAddress
+
+Integer success response
+
+unblockCollegeToAddNewStudents ()
+
+Only university admin can unblock colleges from adding new students
+
+cAddress
+
+Integer success response
+
+addNewStudentToCollege ()
+
+Only approved college admin can add new student to college
+
+sName, sPhone, sAddress
+
+Integer success response
+
+getNumberOfStudentsForCollege ()
+
+Anyone can view total number of students in any college
+
+cAddress
+
+Displays totalNoOfStudents
+
+viewStudentDetails ()
+
+Anyone can view student details
+
+sName
+
+Displays sName, sPhone, courseEnrolled
+
+changeStudentCourse ()
+
+Only approved college admin can change student course enrollment
+
+sName, courseEnrolled, newCourse
+
+Integer success response
+
+Note: All inputs are string except cAddress which is the unique ETH address of each college and cAdmin too is the unique ETH address of the University Admin.
