@@ -1,0 +1,474 @@
+Application Binary Interface
+
+[
+
+            {
+
+                        "inputs": [
+
+                                    {
+
+                                                "internalType": "string",
+
+                                                "name": "collegeName",
+
+                                                "type": "string"
+
+                                    },
+
+                                    {
+
+                                                "internalType": "address",
+
+                                                "name": "add",
+
+                                                "type": "address"
+
+                                    },
+
+                                    {
+
+                                                "internalType": "address",
+
+                                                "name": "cAdmin",
+
+                                                "type": "address"
+
+                                    },
+
+                                    {
+
+                                                "internalType": "string",
+
+                                                "name": "regNo",
+
+                                                "type": "string"
+
+                                    }
+
+                        ],
+
+                        "name": "addNewCollege",
+
+                        "outputs": [],
+
+                        "stateMutability": "nonpayable",
+
+                        "type": "function"
+
+            },
+
+            {
+
+                        "inputs": [
+
+                                    {
+
+                                                "internalType": "address",
+
+                                                "name": "add",
+
+                                                "type": "address"
+
+                                    },
+
+                                    {
+
+                                                "internalType": "string",
+
+                                                "name": "sName",
+
+                                                "type": "string"
+
+                                    },
+
+                                    {
+
+                                                "internalType": "uint256",
+
+                                                "name": "sPhone",
+
+                                                "type": "uint256"
+
+                                    },
+
+                                    {
+
+                                                "internalType": "string",
+
+                                                "name": "courseName",
+
+                                                "type": "string"
+
+                                    }
+
+                        ],
+
+                        "name": "addNewStudentToCollege",
+
+                        "outputs": [],
+
+                        "stateMutability": "nonpayable",
+
+                        "type": "function"
+
+            },
+
+            {
+
+                        "inputs": [
+
+                                    {
+
+                                                "internalType": "address",
+
+                                                "name": "add",
+
+                                                "type": "address"
+
+                                    }
+
+                        ],
+
+                        "name": "blockCollegeToAddNewStudents",
+
+                        "outputs": [],
+
+                        "stateMutability": "nonpayable",
+
+                        "type": "function"
+
+            },
+
+            {
+
+                        "inputs": [
+
+                                    {
+
+                                                "internalType": "address",
+
+                                                "name": "add",
+
+                                                "type": "address"
+
+                                    },
+
+                                    {
+
+                                                "internalType": "string",
+
+                                                "name": "sName",
+
+                                                "type": "string"
+
+                                    },
+
+                                    {
+
+                                                "internalType": "string",
+
+                                                "name": "newCourse",
+
+                                                "type": "string"
+
+                                    }
+
+                        ],
+
+                        "name": "changeStudentCourse",
+
+                        "outputs": [],
+
+                        "stateMutability": "nonpayable",
+
+                        "type": "function"
+
+            },
+
+            {
+
+                        "inputs": [
+
+                                    {
+
+                                                "internalType": "address",
+
+                                                "name": "add",
+
+                                                "type": "address"
+
+                                    }
+
+                        ],
+
+                        "name": "unblockCollegeToAddNewStudents",
+
+                        "outputs": [],
+
+                        "stateMutability": "nonpayable",
+
+                        "type": "function"
+
+            },
+
+            {
+
+                        "inputs": [],
+
+                        "stateMutability": "nonpayable",
+
+                        "type": "constructor"
+
+            },
+
+            {
+
+                        "inputs": [
+
+                                    {
+
+                                                "internalType": "address",
+
+                                                "name": "add",
+
+                                                "type": "address"
+
+                                    }
+
+                        ],
+
+                        "name": "getNumberOfStudentsForCollege",
+
+                        "outputs": [
+
+                                    {
+
+                                                "internalType": "uint256",
+
+                                                "name": "",
+
+                                                "type": "uint256"
+
+                                    }
+
+                        ],
+
+                        "stateMutability": "view",
+
+                        "type": "function"
+
+            },
+
+            {
+
+                        "inputs": [],
+
+                        "name": "totalNoOfColleges",
+
+                        "outputs": [
+
+                                    {
+
+                                                "internalType": "uint256",
+
+                                                "name": "",
+
+                                                "type": "uint256"
+
+                                    }
+
+                        ],
+
+                        "stateMutability": "view",
+
+                        "type": "function"
+
+            },
+
+            {
+
+                        "inputs": [],
+
+                        "name": "totalNoOfStudents",
+
+                        "outputs": [
+
+                                    {
+
+                                                "internalType": "uint256",
+
+                                                "name": "",
+
+                                                "type": "uint256"
+
+                                    }
+
+                        ],
+
+                        "stateMutability": "view",
+
+                        "type": "function"
+
+            },
+
+            {
+
+                        "inputs": [
+
+                                    {
+
+                                                "internalType": "address",
+
+                                                "name": "add",
+
+                                                "type": "address"
+
+                                    }
+
+                        ],
+
+                        "name": "viewCollegeDetails",
+
+                        "outputs": [
+
+                                    {
+
+                                                "internalType": "string",
+
+                                                "name": "",
+
+                                                "type": "string"
+
+                                    },
+
+                                    {
+
+                                                "internalType": "string",
+
+                                                "name": "",
+
+                                                "type": "string"
+
+                                    },
+
+                                    {
+
+                                                "internalType": "uint256",
+
+                                                "name": "",
+
+                                                "type": "uint256"
+
+                                    }
+
+                        ],
+
+                        "stateMutability": "view",
+
+                        "type": "function"
+
+            },
+
+            {
+
+                        "inputs": [
+
+                                    {
+
+                                                "internalType": "string",
+
+                                                "name": "sName",
+
+                                                "type": "string"
+
+                                    }
+
+                        ],
+
+                        "name": "viewStudentDetails",
+
+                        "outputs": [
+
+                                    {
+
+                                                "internalType": "string",
+
+                                                "name": "",
+
+                                                "type": "string"
+
+                                    },
+
+                                    {
+
+                                                "internalType": "uint256",
+
+                                                "name": "",
+
+                                                "type": "uint256"
+
+                                    },
+
+                                    {
+
+                                                "internalType": "string",
+
+                                                "name": "",
+
+                                                "type": "string"
+
+                                    }
+
+                        ],
+
+                        "stateMutability": "view",
+
+                        "type": "function"
+
+            }
+
+]
+
+This can be copied directly from the ABI button in the REMIX IDE window
+
+Transaction Evidence 
+
+SC Deployment Addresses =>           
+From: 0x63FD4b19801e31e5c4020D7f8e7298530E2586AE
+To: 0x0000000000000000000000000000000001000008
+Genesis Block => 
+0x87b39d18522397f40fe98143eacbe6888ec3cc3dd5747ec2514aad131b8c50f7
+Transaction Hashes =>  
+0x87b39d18522397f40fe98143eacbe6888ec3cc3dd5747ec2514aad131b8c50f  
+0x5f662d57165051dd4ceaba8c54c377fd5311a07f16d98f6de22b3be554941fbb
+0x6b706f5b110b5965204486aa20d3cf5fc8a57fdb0e9ae82063b4e780562598e4
+0xb0e46d0a779ce162a885ca6f02dc501fa873713298e6b4198f2574c0a320b771
+0xf816854af5f5beeb6f2fc607820bd69bd4908805db20b6be3b656c8059d9d469
+0x8135849b0432dc2a5e6afa7d63abf3aa21cef218aa1ff047ecfd27b553a73c28
+0xc713d6aba41af2000537e8d84af936a8540deea43c42427151b215f9c38746f1
+0x8135849b0432dc2a5e6afa7d63abf3aa21cef218aa1ff047ecfd27b553a73c28
+
+
+
+
+
+
+
+
+
+
+Conclusion
+
+The smart contract when deployed on a large scale will enable transparency and integrity in the process of education. Further, several more features can be added into this SC like upvoting of colleges, transfer of students from one college to another, etc. Here, only the basic features have been added to demonstrate the business logic that is required as a solution. There are also ways to develop a frontend to access the SC features e.g. React.js. Those interested can even build a dAPP / DAO around this idea. 
+
+A summary of the project is given below:
+
+
+Smart Contract = DCTPAU.sol
+Functions = 09 nos.
+Lines of Code = 86
+SC Deployment cost = 0.00003441 tRBTC
+Total Transaction cost = 0.0000084 tRBTC
+Cumulative Cost = 0.00004281 tRBTC
+Note: The SC was deployed on RSK Testnet (Bitcoin Sidechain) where the cryptocurrency is RBTC / tRBTC.
