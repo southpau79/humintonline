@@ -1,0 +1,104 @@
+Agenda
+Central Bank and other government banks face issues in tracking money laundering activities used for terrorism and other crimes. It is a threat to national security and also adversely affects the economy.
+
+Background
+KYC (Know Your Customer) is a service provided by financial institutions such as banks. There are both public and private sector banks managed by a central bank. These banks are banned by the central bank from adding any new customer and do any more customer KYCs as they see suspicious activities that need to be sorted out first. Despite this, the banks add new customers and do the KYC in the background.
+
+The processes currently in use have a high risk of error, are tiresome, long, and repetitive creating a troublesome experience for customers. Despite all their efforts, the data is still susceptible to being stolen and misused. An immutable decentralized chain of blocks managed by multiple people, across multiple blocks with the feature of recording nearly all values, Blockchain technology helps the distribution of data, utilizing data with integrity, the immutability of the data entered, security and privacy of the data.
+
+As per the assignment requirements, have proposed a KYC verification system that uses blockchain technology to overcome the drawbacks of the system currently in use. Distributed ledger technology (DLT) is used to withdraw and cut-out the access of different third-party or mediator external agencies. Smart contracts are utilized to design the way data is handled throughout the process and how we go about it. Blockchain technology provides a safer medium of transaction over insecure methods through its security features like hashing encryption, traceability of data, and proof of work algorithm. 
+
+A smart contract has been developed using Solidity programming language and deployed on Ethereum blockchain via Ganache provider.
+
+Keywords
+KYC, Blockchain, Ethereum, Smart Contract, Solidity, Remix, Ganache
+
+Introduction
+We are amid IR4.0 and Web3.0 with emerging technologies like Machine Learning, IoT, Big Data, and DLT that provide an optimal solution for storage, management, and access problems. Blockchain technology can provide us with efficient results via DLT through which privacy on an insecure network, reliability and accountability can be improved. 
+
+Given below is the high-level KYC process in the traditional banking system. It is more time consuming, requires more effort and is costly when compared to the proposed solution using blockchain. 
+
+ 
+Figure 1
+Decentralized blockchains are known to be immutable, which implies that the data that has been entered cannot be reversed i.e., it is irreversible and hence transparent. 
+ 
+Figure 2
+
+KYC Process On Blockchain
+
+  
+Figure 3
+Brief features of the process are listed below:
+I.	Whenever a new customer enters into the ecosystem, a bank initiates a KYC request for the customer. Once checked for veracity, the bank uploads the customer's data onto the blockchain using the smart contract. 
+II.	The KYC data can be accessed by other banks in real-time as and when required.
+III.	Admin functionalities are provided for the system, where an admin can track the actions, such as upload, or approval of KYC documents performed by banks. 
+IV.	Admin can block any bank from doing a KYC, admin can also add new banks or remove untrusted banks from the smart contract.
+KYC User Details
+
+ 
+Figure 4
+
+Bank and Customer have been added as a “Struct” with Admin as the “Modifier”. Input variables have been mapped to the Structs. A copy of the source code has been attached separately. 
+
+Smart Contract Features
+
+ 
+Figure 5
+
+Apart from the above basic features, a few more have been added to the smart contract as shown below:
+
+ 
+Figure 6
+
+Project Reference Outputs
+ 
+ 
+Figure 7
+
+Actual screenshots have been attached separately. 
+
+Smart Contract Main Functions
+Function Name	Description	Input	Response
+addNewBank()	used by the admin to add a new bank to the KYC Contract & can be called by admin only.		bankName of string type: The name of the bank
+	address of address type: The unique Ethereum address of the bank	Integer success response
+addNewCustomerToBank()	To add a customer to the customer list.		custName of string type:  The name of the customer
+	custData of string type: Customer supporting data such as address and mobile number	Integer success response
+addNewCustomerRequestForKYC()	used to add the KYC request to the requests list. If a bank is in banned status then the bank won’t be allowed to add requests for any customer		custName of string type: The name of the customer for whom KYC is to be done	Integer success response
+allowBankFromAddingNewCustomers()	only be used by the admin to allow any bank to add any new customer		address of address type: The unique Ethereum address of the bank	Integer success response
+allowBankFromKYC()	only be used by the admin to change the status of KYC Permission of any of the banks at any point of time		address of address type: The unique Ethereum address of the bank	Integer success response
+getCustomerKycStatus()	used to fetch customer KYC status from the smart contract. If true, then the customer is verified		custName of string type: The name of the customer for whom KYC is to be done	True or False
+blockBankFromAddingNewCustomers()	only used by the admin to block any bank from adding any new customer		address of address type: The unique Ethereum address of the bank	Integer success response
+blockBankFromKYC()	only be used by the admin to change the status of KYC permission of any of the banks at any point of time		address of address type: The unique Ethereum address of the bank	Integer success response
+viewCustomerData()	allows a bank to view details of a customer		custName of string type: The name of the customer	Integer success response
+
+Conclusion
+A system using DLT (distributed ledger technology) and blockchain for KYC verification has been showcased here. 
+
+The concepts this system is dependent on and the comparison of it to the existing system has been shown. This system reduces the total monetary cost, and administration expenses involved in the KYC process. It can facilitate more optimization by combining the blockchain methods with other complex technologies like Big data, AI/ML, and IoT enabling hassle-free and effortless implementation of a large population with huge variations.
+
+References
+GitHub, Stack Overflow, Ethereum & Solidity Documentation
+
+Appendix
+Smart Contract = KYCBANKPAU.sol
+Functions = 10 nos.
+Lines of Code = 103 
+SC Deployment cost*1 =  0.0024 ETH
+Total Transaction cost*2 = 0.0004 ETH
+Cumulative Cost = 0.0028 ETH
+
+*1 => Deployed over RSK Testnet (Sidechain over Bitcoin) for 0.0002 BTC
+*2 => Transaction to run all functions i.e. 9 nos. 
+
+Note:
+Source code attached seperately
+Screenshots attached seperately
+
+Technologies Used
+	Solidity programming language
+	Remix IDE
+	Ganache + Metamask (Injected web3 provider)
+	Brave Browser
+
+
+
