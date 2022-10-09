@@ -1,0 +1,201 @@
+ABI
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "bankName",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "add",
+				"type": "address"
+			}
+		],
+		"name": "addNewBank",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "custName",
+				"type": "string"
+			}
+		],
+		"name": "addNewCustomerRequestForKYC",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "custName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "custData",
+				"type": "string"
+			}
+		],
+		"name": "addNewCustomerToBank",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "add",
+				"type": "address"
+			}
+		],
+		"name": "allowBankFromAddingNewCustomers",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "add",
+				"type": "address"
+			}
+		],
+		"name": "allowBankFromKYC",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "add",
+				"type": "address"
+			}
+		],
+		"name": "blockBankFromAddingNewCustomers",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "add",
+				"type": "address"
+			}
+		],
+		"name": "blockBankFromKYC",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "custName",
+				"type": "string"
+			}
+		],
+		"name": "getCustomerKycStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "custName",
+				"type": "string"
+			}
+		],
+		"name": "viewCustomerData",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
+
+==================================================================
+Deployment Transaction Hash: 0x25cb026195a1ca1134a289bd8e14fccc192a400a134fad563770d9392b7d64b3
+Other Transaction Hashes:
+Genesis Block Hash: 0x962f6127b486c91ed29feec2bf3d5900c632eeb6c1b9b3ec2c7c87e0fd0d15c0
+Block 1 Contract Call: 0x6948bf55f28cb655e2a6cf796c92a295f23d4ac9bbcc165603037018f80a1abf
+Block 2 Contract Call: 0x99904e990a553c8f913dcfa8531ee780b877f97f35ff61c20073b13b1747c37c
+Block 3 Contract Call: 0xa80663bc6de21fd67829e5d74b258f662fa15e83a31fa0e4fe772789102db8c8
+Block 4 Contract Call: 0x02594096fbeb90122d1d06495ca683d1bc566c0d79afabe53b6e2404aea86452
+Block 5 Contract Call: 0x114eb817f2f2f045d01a51fd20076de31d1c8d4f8375e6cf2bb5d81c5bd66802
+Block 6 Contract Call: 0x2c404d2ab2f13a5c3efbabf5827e7506d5e984d6621c347286c950a11cd25f08
+Block 7 Contract Call: 0x18b5d0e73dafca491d60744dc59cce62a83c3df85d9dd101bd092c0456e78a0d
+Block 8 Contract Call: 0xa59a7df4e09e9754d4f621a6863cfe6eba5704d3f382270272f3273958969da9
+Block 9 Contract Call: 0x2a49b613638db51a37cf7dfcadeab45ac08a4bde3d0165a707a4d9943bc20143
+
+NOTE: 
+a)	Initially contract was deployed over RSK Testnet (as I couldn’t connect to Ganache due to service provider restrictions / network configuration issues)
+b)	Later encountered “Gas Estimation Error” (error code 32000) and “infinite gas loop” during deployment using Remix with injected web3 provider
+c)	Hence, called the already deployed contract and performed transactions / mined blocks over Ganache provider
